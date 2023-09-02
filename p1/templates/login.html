@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <!-- site metas -->
+  <title>Cycle</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+  <!-- style css -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+  <!-- Responsive-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+  <!-- fevicon -->
+  <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif" />
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}" />
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+  <!-- owl stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700,800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+    media="screen" />
+</head>
+
+<body>
+  <!-- <h1>{{data}}</h1> -->
+
+  <!-- contact section start -->
+  <div class="contact_section layout_padding">
+    <div class="container">
+      <div class="contact_main">
+        <h1 class="request_text">Login</h1>
+        <form action="/userlogin" method="post">
+          <h3>username</h3>
+          <input type="text" name="user_input" placeholder="username" />
+          <h3>password</h3>
+          <input type="text" name="user_input" placeholder="password" />
+          <br><br>
+          <input type="submit" value="login" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- contact section end -->
+
+  <div id="login-tab1"></div>
+  <br /><br />
+  <h1 id="output"></h1>
+
+  <div id="login-tab2" style="display: none">
+    <p>login success</p>
+    <button type="submit" onclick="logout()">log out</button>
+  </div>
+
+  <script>
+      // Your JavaScript code here
+  </script>
+
+  <script>
+      // Your JavaScript code here
+  </script>
+</body>
+
+</html>
